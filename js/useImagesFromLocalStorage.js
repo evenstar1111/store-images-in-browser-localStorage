@@ -37,6 +37,7 @@ try {
             })
 
             img.setAttribute('src', imageSrcs[index]);
+            img.setAttribute('crossorigin', 'anonymous');
 
         } else {
             img.setAttribute('src', storedImgSrc)
