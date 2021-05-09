@@ -5,7 +5,6 @@ try {
         const modalContainer    = document.querySelector('.modal_container');
         const backdrop          = document.querySelector('.backdrop');
         const modalImage        = document.getElementById('modal_image');
-        const imgTitle          = document.getElementById('modal_text');
         const modalCloseBtn     = document.getElementById('modal_closer');
 
         [].forEach.call(images, function(image) {
@@ -13,7 +12,6 @@ try {
                 modalContainer.style.display = 'flex';
                 modalImage.src          = image.src;
                 modalImage.alt          = image.alt;
-                imgTitle.textContent    = image.alt;
                 darkenAllImages();
             })
         });
